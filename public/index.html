@@ -1,13 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Shader Game</title>
-  <meta charset="UTF-8" />
-</head>
-<body>
-  <h1>Shader Game</h1>
-  <canvas id="game" width="800" height="600"></canvas>
+<h1>Game Hub</h1>
 
-  <script src="/app.js"></script>
-</body>
-</html>
+<button onclick="loadGame('clicker')">Clicker</button>
+<button onclick="loadGame('runner')">Runner</button>
+
+<br><br>
+
+<canvas id="game" width="800" height="600"></canvas>
+
+<br>
+
+<!-- ✅ THIS is the save button -->
+<button onclick="submitScore()">Submit Score</button>
+
+<h2>Leaderboard</h2>
+<ul id="leaderboard"></ul>
+
+<script src="/app.js"></script>
